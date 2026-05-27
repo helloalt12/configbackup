@@ -1,0 +1,76 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 40,
+  "margin-top": 8,
+  "margin-left": 10,
+  "margin-right": 10,
+  "exclusive": true,
+  "passthrough": false,
+  "gtk-layer-shell": true,
+  "spacing": 0,
+  "modules-left": [
+    "custom/arch",
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "custom/volume",
+    "custom/network",
+    "custom/battery"
+  ],
+  "custom/arch": {
+    "format": " ",
+    "on-click": "~/.config/rofi/powermenu/powermenu.sh",
+    "tooltip": false
+  },
+  "clock": {
+    "format": "<span size='small' foreground='#ECEFF4' rise='3000'>{0:%a %d}</span>   <span font='Inter Heavy 16' foreground='#8EBEF8'>{0:%H:%M}</span>   <span size='small' foreground='#ECEFF4' rise='3000'>{0:%b %y}</span>",
+    "tooltip": false
+  },
+  "hyprland/workspaces": {
+    "format": " ",
+    "on-click": "activate",
+    "sort-by-number": true,
+    "active-only": false,
+    "all-outputs": true,
+    "disable-scroll": true,
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": []
+    }
+  },
+  "custom/volume": {
+    "exec": "~/.config/waybar/scripts/volume.sh",
+    "return-type": "json",
+    "on-click": "pavucontrol",
+    "on-scroll-up": "pamixer -i 5 && pkill -RTMIN+8 waybar",
+    "on-scroll-down": "pamixer -d 5 && pkill -RTMIN+8 waybar"
+  },
+  "custom/network": {
+    "exec": "~/.config/waybar/scripts/network.sh",
+    "interval": 3,
+    "return-type": "json",
+    "on-click": "~/.config/rofi/wifi/wifi.sh"
+  },
+  "custom/battery": {
+    "exec": "~/.config/waybar/scripts/battery.sh",
+    "interval": 30,
+    "return-type": "json",
+    "on-click": "~/.config/rofi/power-profile/profile.sh"
+  },
+  "custom/menu": {
+    "format": " ",
+    "tooltip": false,
+    "on-click": "echo 'todo'"
+  },
+  "custom/sep": {
+    "format": "|",
+    "tooltip": false
+  }
+}

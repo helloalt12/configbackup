@@ -1,0 +1,15 @@
+{
+  "width": 680,
+  "max_list_height": 420,
+  "max_results": 10,
+  "close_on_focus_loss": true,
+  "show_frecent_on_open": true,
+  "frecent_count": 8,
+  "show_file_search": true,
+  "show_web_fallback": true,
+  "file_search_min_chars": 3,
+  "file_search_limit": 4,
+  "terminal": "kitty",
+  "web_search_url": "https://www.google.com/search?q={}",
+  "web_search_label": "Google"
+}

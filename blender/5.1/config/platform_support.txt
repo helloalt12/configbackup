@@ -1,0 +1,2 @@
+{Intel/Mesa Intel(R) Iris(R) Xe Graphics (ADL GT2)/4.6 (Core Profile) Mesa 25.3.6}=SUPPORTED
+{Intel/Mesa Intel(R) Iris(R) Xe Graphics (ADL GT2)/4.6 (Core Profile) Mesa 26.0.5}=SUPPORTED

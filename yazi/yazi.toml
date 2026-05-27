@@ -1,0 +1,34 @@
+[opener]
+noop = [
+  { run = 'true' },
+]
+edit = [
+  { run = 'nvim "$@"', block = true },
+]
+image = [
+  { run = 'imv "$@"' },
+]
+audio = [
+  { run = 'audacity "$@"' },
+]
+blender = [
+  { run = 'blender "$@"' },
+]
+
+[open]
+rules = [
+  { mime = "inode/directory",   use = "noop" },
+
+  { mime = "model/*",           use = "blender" },
+  { url = "*.blend",            use = "blender" },
+  { url = "*.obj",              use = "blender" },
+  { url = "*.fbx",              use = "blender" },
+  { url = "*.stl",              use = "blender" },
+  { url = "*.glb",              use = "blender" },
+  { url = "*.gltf",             use = "blender" },
+
+  { mime = "audio/*",           use = "audio" },
+  { mime = "image/*",           use = "image" },
+
+  { mime = "*",                 use = "edit" },
+]

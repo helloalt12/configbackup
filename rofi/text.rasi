@@ -1,0 +1,7 @@
+configuration {
+    click-to-exit: true;
+}
+
+window {
+    width: 400px;
+}

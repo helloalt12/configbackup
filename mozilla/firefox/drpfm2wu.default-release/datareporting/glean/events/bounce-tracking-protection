@@ -1,0 +1,10 @@
+{"timestamp":3641991,"category":"bounce.tracking.protection","name":"purge_action","extra":{"bounce_time":"1779798258","site_host":"clothoff.com","glean_timestamp":"1779831867985","success":"true","is_dry_run":"true"},"execution_counter":169}
+{"timestamp":3641991,"category":"bounce.tracking.protection","name":"purge_action","extra":{"success":"true","site_host":"localhost","is_dry_run":"true","bounce_time":"1779801950","glean_timestamp":"1779831867985"},"execution_counter":169}
+{"timestamp":156048,"category":"glean","name":"restarted","extra":{"glean_timestamp":"1779839482064","glean.startup.date":"2026-05-27T06:51+07:00"},"execution_counter":170}
+{"timestamp":159055,"category":"glean","name":"restarted","extra":{"glean.startup.date":"2026-05-27T06:51+07:00","glean_timestamp":"1779839485071"},"execution_counter":171}
+{"timestamp":3758545,"category":"bounce.tracking.protection","name":"purge_action","extra":{"glean_timestamp":"1779843084561","success":"true","bounce_time":"1779839483","is_dry_run":"true","site_host":"twitch.tv"},"execution_counter":171}
+{"timestamp":460982,"category":"glean","name":"restarted","extra":{"glean_timestamp":"1779849988987","glean.startup.date":"2026-05-27T09:46+07:00"},"execution_counter":139}
+{"timestamp":5216229,"category":"glean","name":"restarted","extra":{"glean.startup.date":"2026-05-27T11:05+07:00","glean_timestamp":"1779854744233"},"execution_counter":140}
+{"timestamp":8815704,"category":"bounce.tracking.protection","name":"purge_action","extra":{"bounce_time":"1779851377","glean_timestamp":"1779858343709","site_host":"openai.com","success":"true","is_dry_run":"true"},"execution_counter":140}
+{"timestamp":8815704,"category":"bounce.tracking.protection","name":"purge_action","extra":{"site_host":"clothoff.com","glean_timestamp":"1779858343709","success":"true","bounce_time":"1779853944","is_dry_run":"true"},"execution_counter":140}
+{"timestamp":8815704,"category":"bounce.tracking.protection","name":"purge_action","extra":{"glean_timestamp":"1779858343709","site_host":"docker.com","is_dry_run":"true","success":"true","bounce_time":"1779854074"},"execution_counter":140}

@@ -1,0 +1,132 @@
+/**
+ * profile.rasi — rmustard
+ * Nord · power profile picker · northeast
+ */
+configuration {
+    kb-element-next: "";
+    kb-element-prev: "";
+    kb-accept-entry: "Return,l";
+    kb-cancel:       "Escape,q,h";
+    kb-row-down:     "Down,Tab,j";
+    kb-row-up:       "Up,ISO_Left_Tab,k";
+}
+
+* {
+    /* — Nord Palette — */
+    nord0:  #2E3440;
+    nord1:  #3B4252;
+    nord2:  #434C5E;
+    nord3:  #4C566A;
+    nord4:  #D8DEE9;
+    nord5:  #E5E9F0;
+    nord6:  #ECEFF4;
+    nord9:  #81A1C1;
+    nord11: #BF616A;
+    nord13: #EBCB8B;
+    nord14: #A3BE8C;
+
+    /* — Globals — */
+    background-color: transparent;
+    text-color:       @nord4;
+    font:             "JetBrainsMono Nerd Font 10";
+    border:           0px;
+    margin:           0px;
+    padding:          0px;
+    spacing:          0px;
+}
+
+window {
+    background-color: @nord0;
+    border:           1px solid;
+    border-color:     @nord3;
+    border-radius:    16px;
+    width:            300px;
+    padding:          10px;
+    location:         northeast;
+    anchor:           northeast;
+    x-offset:         -16px;
+    y-offset:         16px;
+}
+
+mainbox {
+    background-color: transparent;
+    children:         [ message, listview ];
+    spacing:          8px;
+}
+
+/* Header — teks datang dari -mesg di script */
+message {
+    background-color: @nord1;
+    border-radius:    10px;
+    padding:          10px 14px;
+}
+
+textbox {
+    background-color: transparent;
+    text-color:       @nord9;
+    font:             "JetBrainsMono Nerd Font Bold 10";
+    vertical-align:   0.5;
+    horizontal-align: 0.5;
+}
+
+listview {
+    background-color: transparent;
+    scrollbar:        false;
+    spacing:          4px;
+    padding:          0px;
+    dynamic:          false;
+    fixed-height:     true;
+    lines:            3;
+    columns:          1;
+}
+
+element {
+    background-color: @nord1;
+    border:           1px solid;
+    border-color:     transparent;
+    border-radius:    10px;
+    padding:          11px 14px;
+    spacing:          10px;
+    cursor:           pointer;
+    orientation:      horizontal;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: @nord1;
+    border-color:     transparent;
+    text-color:       @nord4;
+}
+
+element selected.normal {
+    background-color: @nord2;
+    border-color:     @nord9;
+    text-color:       @nord6;
+}
+
+element normal.active,
+element alternate.active {
+    background-color: @nord1;
+    border-color:     transparent;
+    text-color:       @nord14;
+}
+
+element selected.active {
+    background-color: @nord2;
+    border-color:     @nord14;
+    text-color:       @nord14;
+}
+
+element-icon {
+    background-color: transparent;
+    size:             20px;
+    vertical-align:   0.5;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+    vertical-align:   0.5;
+    horizontal-align: 0.0;
+    expand:           true;
+}

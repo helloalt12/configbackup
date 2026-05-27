@@ -1,0 +1,6 @@
+{"timestamp":11679792,"category":"pictureinpicture","name":"saw_toggle_toggle","extra":{"firstTime":"false","glean_timestamp":"1779861259735"}}
+{"timestamp":11697278,"category":"pictureinpicture","name":"saw_toggle_toggle","extra":{"firstTime":"false","glean_timestamp":"1779861259735"}}
+{"timestamp":11706022,"category":"pictureinpicture","name":"saw_toggle_toggle","extra":{"glean_timestamp":"1779861259735","firstTime":"false"}}
+{"timestamp":11708186,"category":"pictureinpicture","name":"saw_toggle_toggle","extra":{"glean_timestamp":"1779861259735","firstTime":"false"}}
+{"timestamp":11710446,"category":"pictureinpicture","name":"saw_toggle_toggle","extra":{"glean_timestamp":"1779861259735","firstTime":"false"}}
+{"timestamp":11868106,"category":"urlbar","name":"engagement","extra":{"n_chars":"6","n_words":"1","window_mode":"classic","interaction":"typed","selected_result":"search_engine","actions":"none","glean_timestamp":"1779861396111","search_mode":"","provider":"UrlbarProviderHeuristicFallback","available_semantic_sources":"none","groups":"heuristic","results":"search_engine","engagement_type":"enter","sap":"urlbar_newtab","n_results":"1","search_engine_default_id":"google-b-d","selected_position":"1"}}

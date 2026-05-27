@@ -1,0 +1,13 @@
+/* Hilangkan tombol close di tab */
+.tab-close-button {
+  display: none !important;
+}
+
+/* Hilangkan tombol close di window (title bar) */
+.titlebar-close {
+  display: none !important;
+}
+
+#PanelUI-button {
+  display: none !important;
+}

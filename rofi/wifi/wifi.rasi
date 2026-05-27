@@ -1,0 +1,144 @@
+/**
+ * wifi.rasi — rmustard
+ * Nord · wifi picker · northeast
+ */
+
+configuration {
+    click-to-exit:        true;
+    kb-element-next:      "";
+    kb-element-prev:      "";
+    kb-accept-entry:      "Return";
+    kb-cancel:            "Escape,q";
+    kb-row-up:            "Up,k";
+    kb-row-down:          "Down,j";
+}
+
+* {
+    /* — Nord Palette — */
+    nord0:  #2E3440;
+    nord1:  #3B4252;
+    nord2:  #434C5E;
+    nord3:  #4C566A;
+    nord4:  #D8DEE9;
+    nord5:  #E5E9F0;
+    nord6:  #ECEFF4;
+    nord9:  #81A1C1;
+    nord11: #BF616A;
+    nord14: #A3BE8C;
+
+    /* — Globals — */
+    background-color: transparent;
+    text-color:       @nord4;
+    font:             "JetBrainsMono Nerd Font 10";
+    border:           0px;
+    margin:           0px;
+    padding:          0px;
+    spacing:          0px;
+}
+
+window {
+    background-color: @nord0;
+    border:           1px solid;
+    border-color:     @nord3;
+    border-radius:    16px;
+    width:            400px;
+    padding:          10px;
+
+    location:         northeast;
+    anchor:           northeast;
+    x-offset:         -16px;
+    y-offset:         16px;
+}
+
+mainbox {
+    background-color: transparent;
+    children:         [ listview ];
+}
+
+listview {
+    background-color: transparent;
+    spacing:          6px;
+    scrollbar:        false;
+    dynamic:          true;
+    fixed-height:     false;
+}
+
+element {
+    background-color: @nord1;
+    border:           1px solid;
+    border-color:     transparent;
+    border-radius:    10px;
+    padding:          14px 18px;
+    cursor:           pointer;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: @nord1;
+    border-color:     transparent;
+    text-color:       @nord4;
+}
+
+element selected.normal {
+    background-color: @nord2;
+    border-color:     @nord9;
+    text-color:       @nord6;
+}
+
+/* connected network */
+element normal.active,
+element alternate.active {
+    background-color: @nord1;
+    border-color:     transparent;
+    text-color:       @nord14;
+}
+
+element selected.active {
+    background-color: @nord2;
+    border-color:     @nord14;
+    text-color:       @nord14;
+}
+
+/* error / secured */
+element normal.urgent,
+element alternate.urgent {
+    background-color: @nord1;
+    border-color:     transparent;
+    text-color:       @nord11;
+}
+
+element selected.urgent {
+    background-color: @nord2;
+    border-color:     @nord11;
+    text-color:       @nord11;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       #D8DEE9;
+    vertical-align:   0.5;
+    expand:           true;
+}
+
+element-icon {
+    background-color: transparent;
+    size:             0px;
+}
+
+inputbar {
+    background-color: transparent;
+    margin:           0px 0px 8px 0px;
+}
+
+entry {
+    background-color: @nord1;
+    border:           1px solid;
+    border-color:     @nord3;
+    border-radius:    10px;
+    padding:          10px 14px;
+    text-color:       @nord6;
+}
+
+prompt {
+    enabled: false;
+}

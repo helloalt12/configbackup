@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+LAUNCHER="$HOME/.config/nord-launch/launcher.py"
+
+if pgrep -f "$LAUNCHER" >/dev/null; then
+  pkill -f "$LAUNCHER"
+else
+  python3 "$LAUNCHER" >/dev/null 2>&1 &
+fi

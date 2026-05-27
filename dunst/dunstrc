@@ -1,0 +1,4 @@
+# ~/.config/dunst/dunstrc
+[ignore_qtutils]
+summary = "*qtutils*"
+skip_display = yes

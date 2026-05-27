@@ -1,0 +1,48 @@
+/* HARD FLAT MODE */
+
+*,
+*::before,
+*::after {
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* kill inline gradients + dynamic styles */
+[style*="gradient"],
+[style*="linear-gradient"],
+[style*="radial-gradient"] {
+  background: #2e3440 !important;
+  background-image: none !important;
+}
+
+/* Spotify core containers */
+.Root,
+.Root__top-container,
+.Root__main-view,
+.main-view-container,
+.main-view-container__scroll-node,
+.main-home-homeHeader,
+.main-entityHeader-backgroundColor,
+.main-nowPlayingView-nowPlayingView,
+.main-actionBarBackground-background {
+  background: #2e3440 !important;
+  background-image: none !important;
+}
+
+/* remove album tint overlay layer */
+div::before,
+div::after {
+  background: transparent !important;
+}
+
+/* force override animated background layers */
+[style*="opacity"] {
+  filter: none !important;
+}
+
+/* sidebar + cards */
+.Root__nav-bar,
+.main-yourLibraryX-libraryContainer,
+.main-card-card {
+  background: #2b303b !important;
+}

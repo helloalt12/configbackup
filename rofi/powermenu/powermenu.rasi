@@ -1,0 +1,138 @@
+/**
+ * powermenu.rasi — rmustard
+ * Nord · power menu · northwest
+ */
+configuration {
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
+    kb-move-char-back:    "";
+    kb-move-char-forward: "";
+    kb-element-next:      "";
+    click-to-exit:        true;
+    kb-accept-entry:      "Return";
+    kb-row-up:            "Up,k";
+    kb-row-down:          "Down,j";
+    kb-row-left:          "Left,h";
+    kb-row-right:         "Right,Tab,l";
+}
+
+* {
+    /* — Nord Palette — */
+    nord0:  #2E3440;
+    nord1:  #3B4252;
+    nord2:  #434C5E;
+    nord3:  #4C566A;
+    nord4:  #D8DEE9;
+    nord5:  #E5E9F0;
+    nord6:  #ECEFF4;
+    nord9:  #81A1C1;
+    nord11: #BF616A;
+    nord12: #D08770;
+    nord14: #A3BE8C;
+
+    /* — Globals — */
+    background-color: transparent;
+    text-color:       @nord4;
+    font:             "JetBrainsMono Nerd Font 10";
+    border:           0px;
+    margin:           0px;
+    padding:          0px;
+    spacing:          0px;
+}
+
+window {
+    fullscreen: false;
+    background-color: @nord0;
+    border:           1px solid;
+    border-color:     @nord3;
+    border-radius:    16px;
+    width:            600px;
+    padding:          10px;
+    location:         northwest;
+    anchor:           northwest;
+    x-offset:         16px;
+    y-offset:         16px;
+}
+
+mainbox {
+    background-color: transparent;
+    children:         [ listview ];
+}
+
+listview {
+    background-color: transparent;
+    columns:          3;
+    lines:            2;
+    spacing:          6px;
+    scrollbar:        false;
+    dynamic:          false;
+    fixed-height:     true;
+}
+
+element {
+    background-color: @nord1;
+    border:           1px solid;
+    border-color:     transparent;
+    border-radius:    10px;
+    padding:          14px 18px;
+    orientation:      horizontal;
+    cursor:           pointer;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: @nord1;
+    border-color:     transparent;
+    text-color:       @nord4;
+}
+
+element selected.normal {
+    background-color: @nord2;
+    border-color:     @nord9;
+    text-color:       @nord6;
+}
+
+/* -a flag: aksi yang perlu konfirmasi (misal lock) */
+element normal.active,
+element alternate.active {
+    background-color: @nord1;
+    border-color:     transparent;
+    text-color:       @nord12;
+}
+
+element selected.active {
+    background-color: @nord2;
+    border-color:     @nord12;
+    text-color:       @nord12;
+}
+
+/* -u flag: aksi destruktif (shutdown, reboot, logout) */
+element normal.urgent,
+element alternate.urgent {
+    background-color: @nord1;
+    border-color:     transparent;
+    text-color:       @nord11;
+}
+
+element selected.urgent {
+    background-color: @nord2;
+    border-color:     @nord11;
+    text-color:       @nord11;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       #D8DEE9;
+    horizontal-align: 0.5;
+    vertical-align:   0.5;
+    expand:           true;
+}
+
+element-icon {
+    background-color: transparent;
+    size:             0px;
+}
+
+inputbar { enabled: false; }
+prompt   { enabled: false; }
+entry    { enabled: false; }

@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# nord-launch — wrapper script
+# Toggle behavior: if already running, kill it. Otherwise open.
+#
+# Place in ~/.config/nord-launch/nord-launch
+# chmod +x ~/.config/nord-launch/nord-launch
+#
+# Hyprland keybind:
+#   bind = SUPER, SPACE, exec, ~/.config/nord-launch/nord-launch
+
+LAUNCHER="$HOME/.config/nord-launch/launcher.py"
+
+if pgrep -f "python3.*launcher.py" > /dev/null 2>&1; then
+    pkill -f "python3.*launcher.py"
+else
+    python3 "$LAUNCHER" &
+fi
